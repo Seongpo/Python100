@@ -5,7 +5,8 @@ from bs4 import BeautifulSoup
 #print(resp.text)
 
 url = "https://en.wikipedia.org/wiki/Seoul_Metropolitan_Subway"
-resp = requests.get(url)
+url2= "https://www.tta.or.kr/"
+resp = requests.get(url2)
 html_src =resp.text
 
 
