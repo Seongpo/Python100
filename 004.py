@@ -1,9 +1,12 @@
 import requests
 from bs4 import BeautifulSoup
+#roboturl = "https://en.wikipedia.org/robots.txt"
+#resp = requests.get(roboturl)
+#print(resp.text)
 
 url = "https://en.wikipedia.org/wiki/Seoul_Metropolitan_Subway"
-rest = requests.get(url)
-html_src =rest.text
+resp = requests.get(url)
+html_src =resp.text
 
 
 soup = BeautifulSoup(html_src, 'html.parser')
