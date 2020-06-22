@@ -48,7 +48,7 @@ def google_news_clipping(url, limit=5):
 
     news_items=soup.select('div[class="xrnccd"]')
 
-    links=[]; titles=[]; contents=[]; agencies=[]; reporting_dates=[]; reporting_times=[]; 
+    links=[]; titles=[]; contents=[]; agencies=[]; reporting_dates=[]; reporting_times=[]
 
     for item in news_items[:limit]:
         link = item.find('a', attrs = {'class':'VDXfz'}).get('href')
